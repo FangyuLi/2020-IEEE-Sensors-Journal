@@ -24,7 +24,7 @@ sigf = sgolayfilt(sigj,3,5);
 
 %% EMD component extraction
 
-[imf,residual] = emd(sigf);
+[imf,residual] = eemd(sigf,0.1,200,1000);
 
 
 %% calculate the dominant frequencies of different imfs
